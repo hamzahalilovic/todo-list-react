@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { v4 as uuidv4 } from "uuid";
-
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.css";
 import TodoList from "./components/TodoList";
 import TodoInput from "./components/TodoInput";
@@ -27,6 +27,7 @@ class App extends Component {
     console.log("handle change");
   };
   handleSubmit = (e) => {
+    e.preventDefault();
     console.log("handle submit");
   };
   clearList = () => {
