@@ -9,7 +9,7 @@ export default class TodoInput extends Component {
         <form onSubmit={handleSubmit}>
           <div className="input-group">
             <div className="input-group-prepend">
-              <div className="input-group-text bg-warning text-black">
+              <div className="input-group-text bg-success text-black">
                 <i className="fas fa-book"></i>
               </div>
             </div>
@@ -21,7 +21,7 @@ export default class TodoInput extends Component {
             onChange={handleChange}
             />
           </div>
-          <button type="submit" className="btn btn-block btn-warning mt-3 text-uppercase">Add item</button>
+          <button type="submit" className="btn btn-block btn-success mt-3 text-uppercase">Add item</button>
         </form>
       </div>
     );
